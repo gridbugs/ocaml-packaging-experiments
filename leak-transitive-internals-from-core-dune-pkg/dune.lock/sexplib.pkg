@@ -1,0 +1,12 @@
+(version v0.17.0)
+
+(build
+ (run dune build -p %{pkg-self:name} -j %{jobs}))
+
+(depends ocaml parsexp sexplib0 dune num)
+
+(source
+ (fetch
+  (url file:///home/s/src/ocaml-packaging-experiments/sexplib)))
+
+(dev)

@@ -19,9 +19,9 @@ RUN opam install -y ocamlfind
 RUN opam install -y num
 
 USER root
-COPY --chmod=0755 epoch epoch
-RUN chown -R user epoch
+COPY --chmod=0755 leak-nat-from-num-ocamlfind leak-nat-from-num-ocamlfind
+RUN chown -R user leak-nat-from-num-ocamlfind
 USER user
-WORKDIR epoch
+WORKDIR leak-nat-from-num-ocamlfind
 
 
